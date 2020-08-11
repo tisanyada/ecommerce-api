@@ -1,0 +1,42 @@
+{
+	"name": "ecommerce-api",
+	"version": "1.0.0",
+	"description": "This is an ecommerce backend api created with nodejs which allows for users to purchase products and also the admin's who are in charge of monitoring the sites behaviour",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon server",
+		"docs": "apidoc -e node_modules -o ./docs"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tisanyada/ecommerce-api.git"
+	},
+	"keywords": [
+		"api",
+		"ecommerce"
+	],
+	"author": "Yada Martins Tisan",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/tisanyada/ecommerce-api/issues"
+	},
+	"homepage": "https://github.com/tisanyada/ecommerce-api#readme",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"helmet": "^4.0.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.9.28",
+		"morgan": "^1.10.0",
+		"multer": "^1.4.2",
+		"nodemailer": "^6.4.11",
+		"nodemailer-sendgrid-transport": "^0.2.0",
+		"passport": "^0.4.1",
+		"passport-jwt": "^4.0.0",
+		"password-validator": "^5.1.0",
+		"validator": "^13.1.1"
+	}
+}
