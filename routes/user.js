@@ -11,9 +11,12 @@ router.post('/register', userControllers.register);
 // login
 router.post('/login', userControllers.login);
 
-router.get('/user', passport.authenticate('user', { session: false }), (req, res) => {
-    res.json(req.user);
-});
+
+// get products
+// router.get('/products', passport.authenticate('user', { session: false }));
+
+// get cart
+router.get('/cart', passport.authenticate('user', { session: false }), );
 
 
 module.exports = router;

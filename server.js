@@ -16,6 +16,9 @@ require('dotenv').config();
 const MongoURL = process.env.MongoUrl_DEV;
 const PORT = process.env.PORT || 3000;
 
+// multer file config
+const { fileFilter, fileStorage } = require('./middlewares/fileConfig');
+
 
 // middlewares
 app.use(express.urlencoded({ extended: false }));
@@ -23,7 +26,8 @@ app.use(express.json());
 app.use(logger('dev'));
 app.use(helmet());
 app.use(cors());
-// app.use(multer({}));
+app.use(multer({storage: fileStorage, fileFilter: fileFilter}).single('image'));
+
 
 // passport config
 require('./config/passport')(passport);
@@ -32,6 +36,7 @@ app.use(passport.initialize());
 
 // using routes
 app.use('/api/users', require('./routes/user'));
+app.use('/api/admin', require('./routes/admin'));
 
 
 

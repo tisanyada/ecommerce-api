@@ -18,7 +18,7 @@ exports.register = (req, res) => {
         User.findOne({ 'username': username })
             .then(isUser => {
                 if (isUser) {
-                    errors.username = 'username is already exists, please choose another';
+                    errors.username = 'username is already exists, please choose another username';
                     res.status(400).json(errors);
                 }
                 bcrypt.hash(password, 12)
