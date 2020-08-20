@@ -1,5 +1,5 @@
 const multer = require('multer');
-
+const fs = require('fs');
 
 module.exports = {
     fileStorage: multer.diskStorage({
@@ -21,5 +21,10 @@ module.exports = {
         if (image) {
             if (image.mimetype === 'image/jpg' || image.mimetype === 'image/jpeg' || image.mimetype === 'image/png') return true;
         }
+    },
+    deleteImage: (imagepath)=>{
+        fs.unlink(imagepath, (err) => {
+            if(err) throw err;
+        });
     }
 }
