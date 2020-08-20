@@ -10,7 +10,8 @@ This is an ecommerce backend api created with nodejs which allows for users to p
         - To start the application run **npm start** to start running the application
     ```
 ## Routes
-    **Users**
+    *Users*
     ```
         - Register      _/api/users/register_
+        - Login         _/api/users/login_
     ```
