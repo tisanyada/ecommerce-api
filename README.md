@@ -6,11 +6,11 @@ This is an ecommerce backend api created with nodejs which allows for users to p
     - Ensure you have nodejs and mongodb installed
     - Clone the app or download it to your system
     - Change directory(cd) into the project folder
-    - Run *npm install* to install the dependencies from the *package.json* file
-    - To start the application run *npm start* to start running the application
+    - Run **npm install** to install the dependencies from the *package.json* file
+    - To start the application run **npm start** to start running the application
     ```
 ## Routes
-    ```bash
+    ```
     **Users**
         - Register      _/api/users/register_
     ```
