@@ -1,5 +1,5 @@
 # ecommerce-api
-This is an ecommerce api created with nodejs which allows for users to order for products and also the admin's who are in charge of monitoring the sites functionalities
+This is an ecommerce api created with nodejs, express and mongodb
 
 ## How to start
     ```
