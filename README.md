@@ -2,17 +2,14 @@
 This is an ecommerce api created with nodejs, express and mongodb
 
 ## How to start
-    ```
         - Ensure you have nodejs and mongodb installed
         - Clone the app or download it to your system
         - Change directory(cd) into the project folder
         - Run **npm install** to install the dependencies from the *package.json* file
         - To start the application run **npm start** to start running the application
-    ```
 
 ## Routes
     Users
-    ```
         - Register          {post}      /api/users/register
         - Login             {post}      /api/users/login
         - Products          {get}       /api/users/products
@@ -24,9 +21,8 @@ This is an ecommerce api created with nodejs, express and mongodb
         - Orders            {get}       /api/users/orders
         - Create order      {post}      /api/users/orders/create/:id
         - Delete Order item {patch}     /api/users/orders/delete/:id
-    ```
+ 
     Admin
-    ```
         - Register              {post}      /api/admin/register
         - Login                 {post}      /api/admin/login
         - Products              {get}       /api/admin/products
@@ -34,4 +30,3 @@ This is an ecommerce api created with nodejs, express and mongodb
         - Get product item      {get}       /api/admin/products/:id
         - Update product item   {patch}     /api/admin/products/:id
         - Delete product item   {delete}    /api/admin/products/delete/:id
-    ```
